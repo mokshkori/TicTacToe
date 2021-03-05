@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.tictactoe.MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/board"
+        android:id="@+id/gridLayout"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:id="@+id/imageView1"
+            android:onClick="dropOn"
+            android:tag="0"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:id="@+id/imageView108"
+            android:onClick="dropOn"
+            android:tag="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:id="@+id/imageView107"
+            android:onClick="dropOn"
+            android:tag="2"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:id="@+id/imageView106"
+            android:onClick="dropOn"
+            android:tag="3"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:id="@+id/imageView105"
+            android:onClick="dropOn"
+            android:tag="4"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:id="@+id/imageView104"
+            android:onClick="dropOn"
+            android:tag="5"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:id="@+id/imageView103"
+            android:onClick="dropOn"
+            android:tag="6"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:id="@+id/imageView102"
+            android:onClick="dropOn"
+            android:tag="7"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="118dp"
+            android:id="@+id/imageView101"
+            android:onClick="dropOn"
+            android:tag="8"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" />
+
+    </GridLayout>
+
+    <Button
+        android:text="RESET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="reset" />
+
+    <ImageView
+        android:src="@drawable/goback"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/goBack"
+        android:alpha="0.5"
+        android:onClick="undo" />
+
+    <TextView
+        android:text="TURN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView2"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:src="@drawable/zero"
+        android:layout_height="40dp"
+        android:id="@+id/zero"
+        android:layout_width="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/textView2" />
+
+    <ImageView
+        android:src="@drawable/cross"
+        android:layout_height="40sp"
+        android:id="@+id/cross"
+        android:layout_width="40dp"
+        android:alpha="0.2"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView2" />
+
+</RelativeLayout>
